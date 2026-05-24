@@ -2,22 +2,45 @@
 <html lang="en">
 
 <head>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Humaun Kabir — NLP engineer and researcher. MIPT graduate, working on natural language processing, LLMs, and AI. Talks, publications, and leadership in tech and youth.">
     <meta name="author" content="Humaun Kabir">
-    <meta name="theme-color" content="#222222">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="static/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="static/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Humaun Kabir">
+    <meta property="og:description" content="NLP engineer and researcher. MIPT graduate, working on natural language processing, LLMs, and AI.">
+    <meta property="og:image" content="https://ihumaun.com/static/img/profile.jpg">
+    <meta property="og:url" content="https://ihumaun.com/">
+    <meta property="og:site_name" content="Humaun Kabir">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Humaun Kabir">
+    <meta name="twitter:description" content="NLP engineer and researcher. MIPT graduate, working on natural language processing, LLMs, and AI.">
+    <meta name="twitter:image" content="https://ihumaun.com/static/img/profile.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ihumaun.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GK9G91CLXH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -26,364 +49,384 @@
         gtag('config', 'G-GK9G91CLXH');
     </script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- FOUC prevention: set theme before render -->
+    <script>
+        (function(){
+            var t = localStorage.getItem('theme-preference');
+            if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/style/style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Humaun Kabir",
+        "url": "https://ihumaun.com",
+        "image": "https://ihumaun.com/static/img/profile.jpg",
+        "jobTitle": "NLP Engineer & Researcher",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Moscow Institute of Physics and Technology",
+            "url": "https://mipt.ru"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/ihumaunkabir",
+            "https://x.com/ihumaunkabir",
+            "https://www.github.com/ihumaunkabir",
+            "https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g"
+        ]
+    }
+    </script>
 
     <title>Humaun Kabir</title>
 </head>
 
 <body>
-    <div class="container pt-5 allstuffp">
-        <div class="row pt-5 allstuff">
-            <div class="col-md-4 pt-5">
-                <div class="fixed-posi">
-                    <p class="name">Humaun Kabir</p>
-                    <img src="static/img/profile.jpg" alt="Humaun Kabir" class="profilepic pt-1 pb-2">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <i class="fa-solid fa-sun" id="theme-icon-light"></i>
+        <i class="fa-solid fa-moon" id="theme-icon-dark"></i>
+    </button>
 
-                    <div class="social-media-icons">
-                            <a href="https://www.linkedin.com/in/ihumaunkabir" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin" aria-label="LinkedIn"></a>
-                            <a href="https://x.com/ihumaunkabir" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" aria-label="X (Twitter)"></a>
-                            <a href="https://www.github.com/ihumaunkabir" target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-label="GitHub"></a>
-                            <a href="https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g" target="_blank" rel="noopener noreferrer" class="fa fa-youtube" aria-label="YouTube"></a>
-                    </div>
-                </div>
-            </div>
+    <main class="container">
 
-            <div class="col-md-8 pt-5 about">
-                <p style="text-align:justify;">
-                "Hello, World!" I am Humaun Kabir, with a diverse 5+ years of experience in RnD, industry, academia and non-profit organisations, I played a role as NLP engineer and backend developer. I have completed my Master of Science in Neural Networks and Neural Computers from <a class="in-text" href="https://mipt.ru/" target="_blank">Moscow Institute of Physics and Technology</a> with distinction.
-                 During my Master's I worked on neural networks, machine learning and deep learning especially focused on natural language processing. 
-                I worked under the supervision of <a class="in-text" href="https://orcid.org/0000-0003-2942-5101" target="_blank"> Prof. Alexander Kharlamov</a> at the Centre for Information Technologies and Systems CITaS and defended my thesis at the same. In 2024, as an intern at the Natural Language Learning & Generation Lab, I worked under the supervision of <a class="in-text" href="https://scholar.google.com/citations?user=TnuqAW0AAAAJ&hl=de&oi=ao" target="_blank">Prof. Dr. Steffen Eger</a> on NLP for science.<br>
+        <!-- Hero -->
+        <header class="hero">
+            <img src="static/img/profile.jpg" alt="Humaun Kabir" class="hero__photo" width="160" height="160">
+            <h1 class="hero__name">Humaun Kabir</h1>
+            <p class="hero__tagline">NLP Engineer &amp; Researcher</p>
+            <nav class="hero__social" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/ihumaunkabir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/ihumaunkabir" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.github.com/ihumaunkabir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </nav>
+        </header>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <h2 class="section__title">About</h2>
+            <div class="section__content">
+                <p>
+                "Hello, World!" I am Humaun Kabir, with a diverse 5+ years of experience in RnD, industry, academia and non-profit organisations, I played a role as NLP engineer and backend developer. I have completed my Master of Science in Neural Networks and Neural Computers from <a href="https://mipt.ru/" target="_blank" rel="noopener noreferrer">Moscow Institute of Physics and Technology</a> with distinction.
+                 During my Master's I worked on neural networks, machine learning and deep learning especially focused on natural language processing.
+                I worked under the supervision of <a href="https://orcid.org/0000-0003-2942-5101" target="_blank" rel="noopener noreferrer"> Prof. Alexander Kharlamov</a> at the Centre for Information Technologies and Systems CITaS and defended my thesis at the same. In 2024, as an intern at the Natural Language Learning &amp; Generation Lab, I worked under the supervision of <a href="https://scholar.google.com/citations?user=TnuqAW0AAAAJ&amp;hl=de&amp;oi=ao" target="_blank" rel="noopener noreferrer">Prof. Dr. Steffen Eger</a> on NLP for science.<br>
                 <br>I have stepped into the path of research since mid 2022 and since then been working on natural language processing, machine learning, large language models and fine-tuning different pretrained models in the field of multimodal natural language processing through workplace, internship and projects. I am keenly interested in text generation, text classification, LLMs in the field of multimodal nlp, nlp for social good and nlp for science.
                 <br><br>
                 I have hands-on experience in Python, Golang, MongoDB, PostgreSQL, CI/CD, Docker, Airflow, ETL, PyTorch, Open-source LLMs, LLM Evaluation, AutoGen, Neural Nets, scikit-learn, Transformers, GCP and AWS.
                 <br><br>
                 Currently I am working on natural language processing, large language models and AI powered agents for cloud infrastructure. Previously, I worked as a backend developer, co-led projects aiming to contribute in specific SDGs, brought school kids and girls in university to ICT in Bangladesh since 2016. I have been awarded several international fellowships related to youth, technology and development where I got invaluable experiences.
-                Please feel free to reach out to me through <a class="in-text"
-                    href="mailto:humaun.kabir@phystech.edu">email</a> for any query or tweet <a class="in-text" href="https://x.com/ihumaunkabir" target="_blank">@ihumaunkabir</a>. Thank you! 
+                Please feel free to reach out to me through <a href="mailto:humaun.kabir@phystech.edu">email</a> for any query or tweet <a href="https://x.com/ihumaunkabir" target="_blank" rel="noopener noreferrer">@ihumaunkabir</a>. Thank you!
                 </p>
-
-
-                <!-- Updates -->
-                <p class="header pt-5">Updates</p>
-                <div style="height:250px;overflow:auto;">
-                    <table>
-                        <col width="100px">
-                        <tr>
-                            <td><b>Jan 2026:</b></td>
-                            <td>Happy New Year 2026 to everyone!</td>
-                        </tr>
-                        <tr>
-                            <td><b>Sep 2025:</b></td>
-                            <td>Got Selected for V Young Scientist Congress 2025, Sochi.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jul 2025:</b></td>
-                            <td>Got selected for scholarship to attend at the Athens NLP Summer School 2025, Athens.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jun 2025:</b></td>
-                            <td>Participated in the International Youth Forum Eurasia Global 2025, Orenburg.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Apr 2025:</b></td>
-                            <td>Attended in the AWS Summit 2025, Amsterdam.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Mar 2025:</b></td>
-                            <td>Two short papers are accepted into 67th MIPT Conference.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jan 2025:</b></td>
-                            <td>Attended DuckDB conference DuckCon 2025, Amsterdam.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jan 2025:</b></td>
-                            <td>Happy New Year 2025 to everyone!</td>
-                        </tr>
-                        <tr>
-                            <td><b>Nov 2024:</b></td>
-                            <td>Participated in the Young Scientists Congress 2024</a> at Sochi.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Sep 2024:</b></td>
-                            <td>Participated in the Eurasia Global 2024 at Orenburg.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jul 2024:</b></td>
-                            <td>Got accepted into Athens Natural Language Processing Summer School 2024.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jun 2024:</b></td>
-                            <td>Joined Natural Language Learning & Generation Lab as Intern.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Feb 2024:</b></td>
-                            <td>Participated in World Youth Festival 2024 at Sochi.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Dec 2023:</b></td>
-                            <td>Spoke to Child Online Protection for Asia and the Pacific Concluding Workshop 2023.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Oct 2023:</b></td>
-                            <td>Participated in Neuroinformatics Conference 2023.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Oct 2023:</b></td>
-                            <td>Joined ISS-Soft as Jr. Programmer NLP.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Aug 2023:</b></td>
-                            <td>Completed my dream trip to Lake Baikal and Transsiberian Railway.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jul 2023:</b></td>
-                            <td>Pitched to ITU Council 2023 as GCYL.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jul 2023:</b></td>
-                            <td>Graduated from Moscow Institute of Physics and Technology with Red Diploma.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jun 2023:</b></td>
-                            <td>Defended my Master's thesis at MIPT.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Oct 2022:</b></td>
-                            <td>Got nominated for ITU Plenipotentiary Conference, Romania.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jun 2022:</b></td>
-                            <td>Got nominated for the first ever youth summit by ITU GC in Rwanda.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Nov 2021:</b></td>
-                            <td>Started my Master's at Moscow Institute of Physics and Technology.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Nov 2021:</b></td>
-                            <td>Left Bangladesh Open Source Network BdOSN.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Aug 2021:</b></td>
-                            <td>Left Fair Lab.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jun 2021:</b></td>
-                            <td>Spoke to Girls in Tech Day Bangladesh.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Mar 2021:</b></td>
-                            <td>Started a remote position at Fordham Human Centered AI Research Lab as RA.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Mar 2021:</b></td>
-                            <td>Became one of the 26 youth envoys from all over the world at ITU Generation Connect.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Feb 2021:</b></td>
-                            <td>Became one of the 31 winners at International Open Doors Olympiad.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Jan 2021:</b></td>
-                            <td>Happy New Year.</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-
-
-                <!-- Experience
-                <p class="header pt-5">Experience</p>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <img src="static/logos/yandex.png" alt="Logo" style="width:50px; height:50px; vertical-align:middle; margin-right:5px;">
-                        <span class="papertitle">Yandex LLC</span><br>
-                        <span class="conf"> Golang Author</span><br>
-                        <span class="conf">Authored a Golang online course for students aged 13 to 18 at Yandex Lyceum. Along with other team authors, I wrote theory, example codes, and exercises, and prepared tasks on various topics. I also wrote solution codes in Golang for the tasks, including tests that follow best practices.</span> <br>
-                        <span class="tagsep">Oct 2023</span>
-                        <span class="tagsep">to</span>
-                        <span class="tagsep">Dec 2023</span>
-                    </p>
-                    <br>
-
-                <!-- </div> -->
-
-                <!-- Education -->
-                <p class="header pt-5">Education</p>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <img src="static/logos/mipt.png" alt="Logo" style="width:50px; height:50px; vertical-align:middle; margin-right:5px;">
-                        <span class="papertitle">Moscow Institute of Physics and Technology</span><br>
-                        <span class="conf"> <span class="degree"> 🎓 Red Diploma </span><br>Master's in Applied Mathematics and Physics</span><br>
-                        <span class="conf">Specialization: Neural Networks and Neural Computers<br>Phystech School of Radio Engineering and Computer Science</span> <br>
-                        <span class="tagsep">Oct 2021</span>
-                        <span class="tagsep">to</span>
-                        <span class="tagsep">Aug 2023</span>
-                    </p>
-                </div>
-
-                <!-- Publications -->
-                <p class="header pt-5">Publications</p>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Evaluation of Large Language Models for Bengali Fake News Classification Task in Zero-Shot Settings</span><br>
-                        <span class="thisauthor"> Kabir, A.S.M.H.</span>, Kharlamov, A.A., Voronkov, I.M.<br>
-                        <span class="conf">67th All-Russian Scientific Conference of MIPT</span> <br>
-                        <a class="tag" href="cites/bnllm.bib" target="_blank">cite</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="#" target="#">read</a>
-                    </p>
-
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Research Methods for Fake News Detection in Bangla Text</span><br>
-                        <span class="thisauthor"> Kabir, A.S.M.H.</span>, Kharlamov, A.A., Voronkov, I.M.<br>
-                        <span class="conf">International Conference on Neuroinformatics 2023</span> <br>
-                        <a class="tag" href="cites/bnf.bib" target="_blank">cite</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="#" target="#">read</a>
-                    </p>
-
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">A Comparative Analysis of Word Embedding Models in Text Classification of Bengali Language</span><br>
-                        <span class="thisauthor"> Kabir, A.S.M.H.</span>, Kharlamov, A.A., Voronkov, I.M.<br>
-                        <span class="conf">66th All-Russian Scientific Conference of MIPT</span> <br>
-                        <a class="tag" href="cites/bne.bib" target="_blank">cite</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="#" target="#">read</a>
-                    </p>
-
-                </div>
-
-
-                <!-- Talk(s), Media and Fellowship(s) -->
-                <p class="header pt-5">Talks and Fellowships</p>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Speaker - Child Rights in a Digital Era</span><br>
-                        <span class="conf">Child Online Protection for Asia and the Pacific Concluding Workshop 2023</span><br>
-                        <span class="conf">Workshop | Thailand</span><br>
-                        <a class="tag" href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Documents/Child%20Online%20Protection%20Asia%20and%20the%20Pacific%20Concluding%20Workshop%20Conference%20Report.pdf" target="_blank">report (page 38)</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Pages/v2/RD%27s%20Corner/Project%20Pages/Child-Online-Protection-for-Asia-and-the-Pacific-2022.aspx" target="_blank">web</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Speaker - Generation Connect Pitch</span><br>
-                        <span class="conf">International Telecommunication Union Council 2023</span><br>
-                        <span class="conf">Council | Switzerland</span><br>
-                        <a class="tag" href="https://council.itu.int/2023-additional/en/" target="_blank">web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="static/pdfs/ituc.pdf" target="_blank">slides</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="static/pdfs/itucp.pdf" target="_blank">certificate</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">ITU GC Fellow, Asia and Pacific Youth Envoy</span><br>
-                        <span class="conf">International Telecommunication Plenipotentiary Conference 2022</span><br>
-                        <span class="conf">Conference | Romania</span><br>
-                        <a class="tag" href="https://pp22.itu.int/en/en/about/about-pp22/" target="_blank">web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="static/pdfs/itupp.pdf" target="_blank">certificate</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Speaker - Meaningful Youth Engagement in ICTD</span><br>
-                        <span class="conf">Girls in Tech Day Bangladesh 2021</span><br>
-                        <span class="conf">Celebration | Bangladesh</span><br>
-                        <a class="tag" href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Pages/Events/2021/GiT%20Day%20Bangladesh/Girls-in-Tech-Day-Bangladesh.aspx" target="_blank">web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://girlsinict-asiapacific.org/wp-content/uploads/2021/07/1.-Plenary-and-launching-of-Girls-in-Tech-Bangladesh-2021.jpg" target="_blank">poster</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="badge"> 🏆 Winner </span><br><span class="papertitle">Computer and Data Science Track</a></span><br>
-                        <span class="conf">International Open Doors Olympiad 2021</span><br>
-                        <span class="conf">Competition | International</span><br>
-                        <a class="tag" href="https://od.globaluni.ru/" target="_blank">web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="static/pdfs/od.pdf" target="_blank">certificate</a>
-                    </p>
-                </div>
-
-                <!-- <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Bengali language and BengaliAI in EMNLP</span><br>
-                        <span class="conf">[Newspaper, Bangladesh] Dainik Bangla (Print and Online Edition)</span><br>
-                        <a class="tag" href="https://epaper.dainikbangla.com.bd/arc/next_page/2023-02-26/9" target="_blank">Read (bn)</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Preparation for high school level national programming competition</span><br>
-                        <span class="conf">[Newspaper, Bangladesh] Prothom Alo and Kishor Alo (Print and Online Edition)</span><br>
-                        <a class="tag" href="https://www.prothomalo.com/bangladesh/article/1562860/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BF%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%AE%E0%A7%81%E0%A6%B9%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF" target="_blank">Read in Prothom Alo (bn)</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://www.kishoralo.com/%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6%E0%A6%A8%E0%A6%BE%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%87%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BF%E0%A6%A4%E0%A6%BE-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A7%E0%A6%8F%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF" target="_blank">Kishor Alo (bn)</a>
-                    </p>
-                </div> -->
-
-
-                <!-- Leadership -->
-                <p class="header pt-5">Leadership</p>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Alumni GC - International Telecommunication Union </span><br>
-                        <span class="conf">Served as a Youth Envoy for Asia and Pacific Region 2021-2024 and now serving as an Alumni and contributing to the current cohort.</span><br>
-                        <a class="tag" href="https://www.itu.int/generationconnect/" target="_blank">Generation Connect Web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="static/pdfs/gcaspletter.pdf" target="_blank">Recommendation Letter</a>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Academic Coordinator - Bangladesh Artificial Intelligence Olympiad BdAIO</span><br>
-                        <span class="conf">Serving as an academic coordinator and founding team member since 2024, contributing in academic and strategic planning for national competition. In general, BdAIO sends teams to participate in international olympiads.</span><br>
-                        <a class="tag" href="https://bdaio.org/" target="_blank">BdAIO Web</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://www.thedailystar.net/tech-startup/news/bangladesh-wins-2-silver-and-2-bronze-first-ever-international-ai-olympiad-3703506" target="_blank">News</a>
-                    </p>
-                </div>
-                <span class="badgelast">🔔 <strong>Information</strong></span><p style="text-align:justify;">Thank you for scrolling down, in addition to this homepage, find more of my past experiences, curricular & co-curricular activities, achievements, news articles and media presence, <a class="in-text" href="static/html/pastexp.html">please click here</a>.</p>
-
-                <!-- end of content div-->
             </div>
-             <!-- end of about div-->
-        </div>
-    </div>
-    </div>
+        </section>
 
-    <footer>
-        <div class="text-center medium mt-2">&copy;2025 Humaun Kabir</div>
-        <br>
+        <!-- Updates -->
+        <section class="section" id="updates">
+            <h2 class="section__title">Updates</h2>
+            <div class="section__content">
+                <ul class="updates-list">
+                    <li class="updates-list__item">
+                        <time datetime="2026-01">Jan 2026</time>
+                        <span>Happy New Year 2026 to everyone!</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-09">Sep 2025</time>
+                        <span>Got Selected for V Young Scientist Congress 2025, Sochi.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-07">Jul 2025</time>
+                        <span>Got selected for scholarship to attend at the Athens NLP Summer School 2025, Athens.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-06">Jun 2025</time>
+                        <span>Participated in the International Youth Forum Eurasia Global 2025, Orenburg.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-04">Apr 2025</time>
+                        <span>Attended in the AWS Summit 2025, Amsterdam.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-03">Mar 2025</time>
+                        <span>Two short papers are accepted into 67th MIPT Conference.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-01">Jan 2025</time>
+                        <span>Attended DuckDB conference DuckCon 2025, Amsterdam.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2025-01">Jan 2025</time>
+                        <span>Happy New Year 2025 to everyone!</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2024-11">Nov 2024</time>
+                        <span>Participated in the Young Scientists Congress 2024 at Sochi.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2024-09">Sep 2024</time>
+                        <span>Participated in the Eurasia Global 2024 at Orenburg.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2024-07">Jul 2024</time>
+                        <span>Got accepted into Athens Natural Language Processing Summer School 2024.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2024-06">Jun 2024</time>
+                        <span>Joined Natural Language Learning &amp; Generation Lab as Intern.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2024-02">Feb 2024</time>
+                        <span>Participated in World Youth Festival 2024 at Sochi.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-12">Dec 2023</time>
+                        <span>Spoke to Child Online Protection for Asia and the Pacific Concluding Workshop 2023.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-10">Oct 2023</time>
+                        <span>Participated in Neuroinformatics Conference 2023.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-10">Oct 2023</time>
+                        <span>Joined ISS-Soft as Jr. Programmer NLP.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-08">Aug 2023</time>
+                        <span>Completed my dream trip to Lake Baikal and Transsiberian Railway.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-07">Jul 2023</time>
+                        <span>Pitched to ITU Council 2023 as GCYL.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-07">Jul 2023</time>
+                        <span>Graduated from Moscow Institute of Physics and Technology with Red Diploma.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2023-06">Jun 2023</time>
+                        <span>Defended my Master's thesis at MIPT.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2022-10">Oct 2022</time>
+                        <span>Got nominated for ITU Plenipotentiary Conference, Romania.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2022-06">Jun 2022</time>
+                        <span>Got nominated for the first ever youth summit by ITU GC in Rwanda.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-11">Nov 2021</time>
+                        <span>Started my Master's at Moscow Institute of Physics and Technology.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-11">Nov 2021</time>
+                        <span>Left Bangladesh Open Source Network BdOSN.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-08">Aug 2021</time>
+                        <span>Left Fair Lab.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-06">Jun 2021</time>
+                        <span>Spoke to Girls in Tech Day Bangladesh.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-03">Mar 2021</time>
+                        <span>Started a remote position at Fordham Human Centered AI Research Lab as RA.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-03">Mar 2021</time>
+                        <span>Became one of the 26 youth envoys from all over the world at ITU Generation Connect.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-02">Feb 2021</time>
+                        <span>Became one of the 31 winners at International Open Doors Olympiad.</span>
+                    </li>
+                    <li class="updates-list__item">
+                        <time datetime="2021-01">Jan 2021</time>
+                        <span>Happy New Year.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <h2 class="section__title">Education</h2>
+            <div class="section__content">
+                <article class="entry-card">
+                    <div class="entry-card__header">
+                        <img src="static/logos/mipt.png" alt="Moscow Institute of Physics and Technology" class="entry-card__logo" width="50" height="50">
+                        <div>
+                            <h3 class="entry-card__title">Moscow Institute of Physics and Technology</h3>
+                            <span class="badge">Red Diploma</span>
+                        </div>
+                    </div>
+                    <p class="entry-card__detail">
+                        Master's in Applied Mathematics and Physics<br>
+                        Specialization: Neural Networks and Neural Computers<br>
+                        Phystech School of Radio Engineering and Computer Science
+                    </p>
+                    <p class="entry-card__date">Oct 2021 &ndash; Aug 2023</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="section" id="publications">
+            <h2 class="section__title">Publications</h2>
+            <div class="section__content">
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Evaluation of Large Language Models for Bengali Fake News Classification Task in Zero-Shot Settings</h3>
+                    <p class="entry-card__authors"><strong class="thisauthor">Kabir, A.S.M.H.</strong>, Kharlamov, A.A., Voronkov, I.M.</p>
+                    <p class="entry-card__venue">67th All-Russian Scientific Conference of MIPT</p>
+                    <div class="entry-card__links">
+                        <a href="cites/bnllm.bib" target="_blank">cite</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">read</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Research Methods for Fake News Detection in Bangla Text</h3>
+                    <p class="entry-card__authors"><strong class="thisauthor">Kabir, A.S.M.H.</strong>, Kharlamov, A.A., Voronkov, I.M.</p>
+                    <p class="entry-card__venue">International Conference on Neuroinformatics 2023</p>
+                    <div class="entry-card__links">
+                        <a href="cites/bnf.bib" target="_blank">cite</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">read</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">A Comparative Analysis of Word Embedding Models in Text Classification of Bengali Language</h3>
+                    <p class="entry-card__authors"><strong class="thisauthor">Kabir, A.S.M.H.</strong>, Kharlamov, A.A., Voronkov, I.M.</p>
+                    <p class="entry-card__venue">66th All-Russian Scientific Conference of MIPT</p>
+                    <div class="entry-card__links">
+                        <a href="cites/bne.bib" target="_blank">cite</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">read</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Talks and Fellowships -->
+        <section class="section" id="talks">
+            <h2 class="section__title">Talks and Fellowships</h2>
+            <div class="section__content">
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Speaker - Child Rights in a Digital Era</h3>
+                    <p class="entry-card__venue">Child Online Protection for Asia and the Pacific Concluding Workshop 2023</p>
+                    <p class="entry-card__meta">Workshop | Thailand</p>
+                    <div class="entry-card__links">
+                        <a href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Documents/Child%20Online%20Protection%20Asia%20and%20the%20Pacific%20Concluding%20Workshop%20Conference%20Report.pdf" target="_blank" rel="noopener noreferrer">report (page 38)</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Pages/v2/RD%27s%20Corner/Project%20Pages/Child-Online-Protection-for-Asia-and-the-Pacific-2022.aspx" target="_blank" rel="noopener noreferrer">web</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Speaker - Generation Connect Pitch</h3>
+                    <p class="entry-card__venue">International Telecommunication Union Council 2023</p>
+                    <p class="entry-card__meta">Council | Switzerland</p>
+                    <div class="entry-card__links">
+                        <a href="https://council.itu.int/2023-additional/en/" target="_blank" rel="noopener noreferrer">web</a>
+                        <span class="sep">|</span>
+                        <a href="static/pdfs/ituc.pdf" target="_blank">slides</a>
+                        <span class="sep">|</span>
+                        <a href="static/pdfs/itucp.pdf" target="_blank">certificate</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">ITU GC Fellow, Asia and Pacific Youth Envoy</h3>
+                    <p class="entry-card__venue">International Telecommunication Plenipotentiary Conference 2022</p>
+                    <p class="entry-card__meta">Conference | Romania</p>
+                    <div class="entry-card__links">
+                        <a href="https://pp22.itu.int/en/en/about/about-pp22/" target="_blank" rel="noopener noreferrer">web</a>
+                        <span class="sep">|</span>
+                        <a href="static/pdfs/itupp.pdf" target="_blank">certificate</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Speaker - Meaningful Youth Engagement in ICTD</h3>
+                    <p class="entry-card__venue">Girls in Tech Day Bangladesh 2021</p>
+                    <p class="entry-card__meta">Celebration | Bangladesh</p>
+                    <div class="entry-card__links">
+                        <a href="https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/Pages/Events/2021/GiT%20Day%20Bangladesh/Girls-in-Tech-Day-Bangladesh.aspx" target="_blank" rel="noopener noreferrer">web</a>
+                        <span class="sep">|</span>
+                        <a href="https://girlsinict-asiapacific.org/wp-content/uploads/2021/07/1.-Plenary-and-launching-of-Girls-in-Tech-Bangladesh-2021.jpg" target="_blank" rel="noopener noreferrer">poster</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <span class="badge">Winner</span>
+                    <h3 class="entry-card__title">Computer and Data Science Track</h3>
+                    <p class="entry-card__venue">International Open Doors Olympiad 2021</p>
+                    <p class="entry-card__meta">Competition | International</p>
+                    <div class="entry-card__links">
+                        <a href="https://od.globaluni.ru/" target="_blank" rel="noopener noreferrer">web</a>
+                        <span class="sep">|</span>
+                        <a href="static/pdfs/od.pdf" target="_blank">certificate</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section class="section" id="leadership">
+            <h2 class="section__title">Leadership</h2>
+            <div class="section__content">
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Alumni GC - International Telecommunication Union</h3>
+                    <p class="entry-card__detail">Served as a Youth Envoy for Asia and Pacific Region 2021-2024 and now serving as an Alumni and contributing to the current cohort.</p>
+                    <div class="entry-card__links">
+                        <a href="https://www.itu.int/generationconnect/" target="_blank" rel="noopener noreferrer">Generation Connect Web</a>
+                        <span class="sep">|</span>
+                        <a href="static/pdfs/gcaspletter.pdf" target="_blank">Recommendation Letter</a>
+                    </div>
+                </article>
+
+                <article class="entry-card">
+                    <h3 class="entry-card__title">Academic Coordinator - Bangladesh Artificial Intelligence Olympiad BdAIO</h3>
+                    <p class="entry-card__detail">Serving as an academic coordinator and founding team member since 2024, contributing in academic and strategic planning for national competition. In general, BdAIO sends teams to participate in international olympiads.</p>
+                    <div class="entry-card__links">
+                        <a href="https://bdaio.org/" target="_blank" rel="noopener noreferrer">BdAIO Web</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.thedailystar.net/tech-startup/news/bangladesh-wins-2-silver-and-2-bronze-first-ever-international-ai-olympiad-3703506" target="_blank" rel="noopener noreferrer">News</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Past Experiences CTA -->
+        <section class="section">
+            <p>Thank you for scrolling down, in addition to this homepage, find more of my past experiences, curricular &amp; co-curricular activities, achievements, news articles and media presence, <a href="static/html/pastexp.html">please click here</a>.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Humaun Kabir</p>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
     <script src="static/style/style.js"></script>
 </body>
 
