@@ -1,91 +1,58 @@
-// Initialize font properties
-const fontname = "Ubuntu";
-const fontweights = [300, 400]
+(function() {
+    'use strict';
 
-// Color properties
-const basecolor = "#777";
-const accentcolor = "#a00";
-const highlightcolor = "#111";
+    var STORAGE_KEY = 'theme-preference';
+    var DARK = 'dark';
+    var LIGHT = 'light';
 
+    function getSystemPreference() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
+    }
 
-// Body properties
-const bodyfontweight = 300;
-const bodyfontsize = "12pt";
-const backgroundcolor = "#fff";
+    function getStoredPreference() {
+        try {
+            return localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+            return null;
+        }
+    }
 
-// Link properties
-const acolor = accentcolor;
-const adecoration = "none";
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+            meta.setAttribute('content', theme === DARK ? '#111111' : '#ffffff');
+        }
+    }
 
-// Menu properties
-const menucolor = basecolor;
-const menufontsize = "14pt";
-const menudecoration = "none";
+    function init() {
+        var stored = getStoredPreference();
+        var system = getSystemPreference();
+        var theme = stored || system;
+        applyTheme(theme);
 
-// Header properties
-const headercolor = accentcolor;
-const headerfontsize = "18pt";
-const headerdecoration = "none";
-const namecolor = highlightcolor;
-const namefontsize = "23pt";
+        var toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', function() {
+                var current = document.documentElement.getAttribute('data-theme') || LIGHT;
+                var next = current === DARK ? LIGHT : DARK;
+                applyTheme(next);
+                try {
+                    localStorage.setItem(STORAGE_KEY, next);
+                } catch (e) {}
+            });
+        }
 
-// Publication properties
-const ptitlecolor = accentcolor;
-const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
-const ptitledecoration = "none";
-const ptitlestyle = "normal";
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            if (!getStoredPreference()) {
+                applyTheme(e.matches ? DARK : LIGHT);
+            }
+        });
+    }
 
-const authorcolor = accentcolor;
-const authorweight = bodyfontweight;
-const authordecoration = "none";
-const authorstyle = "normal";
-
-const selfcolor = highlightcolor;
-const selfweight = bodyfontweight;
-const selfdecoration = "none";
-const selfstyle = "normal";
-
-const tagcolor = accentcolor;
-const tagweight = bodyfontweight;
-const tagdecoration = "none";
-const tagstyle = "normal";
-
-const insttitlecolor = highlightcolor;
-const insttitlesize = "12px";
-const instyearcolor = accentcolor;
-const instyearsize = "11px";
-
-// Works for sans serif, change otherwise
-$("head").append("<link href='https://fonts.googleapis.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
-$("body").css("font-family", fontname);
-
-$("body").css("color", basecolor);
-$("body").css("font-weight", bodyfontweight);
-$("body").css("font-size", bodyfontsize);
-$("body").css("background-color", backgroundcolor);
-
-$("a").css("color", acolor);
-$("a").css("text-decoration", adecoration);
-
-$(".header").css("color", headercolor);
-$(".header").css("font-size", headerfontsize);
-$(".header").css("text-decoration", headerdecoration);
-$(".name").css("color", namecolor);
-$(".name").css("font-size", namefontsize);
-
-$(".papertitle").css("color", ptitlecolor);
-$(".papertitle").css("font-size", ptitlefontsize);
-$(".papertitle").css("font-weight", ptitleweight);
-$(".papertitle").css("text-decoration", ptitledecoration);
-$(".papertitle").css("font-style", ptitlestyle);
-
-$(".thisauthor").css("color", selfcolor);
-$(".thisauthor").css("font-weight", selfweight);
-$(".thisauthor").css("text-decoration", selfdecoration);
-$(".thisauthor").css("font-style", selfstyle);
-
-$(".institution").css("color", insttitlecolor);
-$(".institution").css("font-size", insttitlesize);
-$(".years").css("color", instyearcolor);
-$(".years").css("font-size", instyearsize);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
