@@ -16,7 +16,7 @@ AI Engineer and Researcher
 
 ## About
 
-"Hello, World!" I am Humaun Kabir. With 5+ years of diverse experience across R&D, industry, academia and non-profit organisations, I have worked as an NLP engineer and backend developer. I completed my Master of Science in Neural Networks and Neural Computers at [Moscow Institute of Physics and Technology](https://mipt.ru/) with distinction.
+"Hello, World!" I am Humaun Kabir. With 5+ years of diverse experience across R&D, industry, academia and non-profit organisations, I have worked as an AI/NLP engineer and backend developer. I completed my Master of Science in Neural Networks and Neural Computers at [Moscow Institute of Physics and Technology](https://mipt.ru/) with distinction.
 
 During my Master's, I worked on neural networks, machine learning and deep learning, with a special focus on natural language processing.
 
@@ -24,7 +24,7 @@ I worked under the supervision of [Prof. Alexander Kharlamov](https://orcid.org/
 
 I have been on the research path since mid-2022 and have since been working on natural language processing, machine learning, large language models and fine-tuning different pretrained models in multimodal NLP through my workplace, internships and personal projects. I am keenly interested in text generation, text classification, LLMs for multimodal NLP, NLP for social good and NLP applied to science.
 
-I have hands-on experience in Python, Golang, MongoDB, PostgreSQL, CI/CD, Docker, Airflow, ETL, PyTorch, open-source LLMs, LLM evaluation, AutoGen, neural networks, scikit-learn, Transformers, GCP and AWS.
+I have hands-on experience in Python, Golang, Next.js, MongoDB, PostgreSQL, CI/CD, Docker, Airflow, n8n, ETL, PyTorch, neural networks, scikit-learn, Transformers, open-source LLMs, RAG, Pinecone, Qdrant, LLM evaluation, AutoGen, GCP, AWS and Azure AI.
 
 Currently, I am working on natural language processing, large language models and agents for various applications. Previously, I worked as a backend developer, co-led projects aimed at contributing to specific SDGs, and introduced school kids and university girls in Bangladesh to ICT since 2016. I have been awarded several international fellowships related to youth, technology and development, through which I gained invaluable experience.
 
