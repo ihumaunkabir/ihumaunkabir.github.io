@@ -1,0 +1,39 @@
+# Humaun Kabir
+
+> AI/NLP engineer and researcher working on natural language processing, large language models, low-resource languages, and AI agents.
+
+Humaun Kabir is an AI/NLP engineer and researcher with 5+ years of experience across R&D, industry, academia, and non-profit sectors. He completed his M.Sc. in Neural Networks and Neural Computers at the Moscow Institute of Physics and Technology (MIPT) with distinction (Red Diploma). His research interests include text generation, text classification, LLMs for multimodal NLP, NLP for social good, and NLP applied to science. He is currently working on natural language processing, large language models, and AI agents for various applications.
+
+This site is published in both HTML and LLM-friendly markdown. Both versions contain identical content; prefer the markdown versions for ingestion.
+
+## Markdown Pages (preferred for ingestion)
+
+- [Home (index.md)](https://ihumaun.com/index.md): Bio, updates, education, publications, talks, fellowships, and leadership.
+- [Past Experiences (pastexp.md)](https://ihumaun.com/static/html/pastexp.md): Past affiliations, media and newspaper articles, achievements, and curricular/co-curricular records.
+
+## HTML Pages
+
+- [Home (index.html)](https://ihumaun.com/): HTML version of the homepage.
+- [Past Experiences (pastexp.html)](https://ihumaun.com/static/html/pastexp.html): HTML version of the past experiences page.
+
+## Publications (BibTeX)
+
+- [fnllr.bib](https://ihumaun.com/cites/fnllr.bib) — Kabir et al., "Fake News Detection in Low-Resource Languages with LLMs," MOIT 14(6), 2026.
+- [bnllm.bib](https://ihumaun.com/cites/bnllm.bib) — Kabir et al., "Evaluation of LLMs for Bengali Fake News Classification in Zero-Shot Settings," 67th MIPT, 2025.
+- [bne.bib](https://ihumaun.com/cites/bne.bib) — Kabir et al., "A Comparative Analysis of Word Embedding Models in Text Classification of Bengali Language," 66th MIPT, 2024.
+- [bnf.bib](https://ihumaun.com/cites/bnf.bib) — Kabir et al., "Research Methods for Fake News Detection in Bangla Text," Neuroinformatics, 2023.
+- [noop.bib](https://ihumaun.com/cites/noop.bib) — Khan, Kabir, "No-Op-Aware Training and Quantization Framework for Outlier Robust Transformer based Language Models," IJ OIT 14(6), 2026.
+- [qofqlm.bib](https://ihumaun.com/cites/qofqlm.bib) — Khan, Kabir, Rustam, "Quantization of Outlier Free Quantizable Language Models," MOIT 14(4), 2026.
+- [qllm.bib](https://ihumaun.com/cites/qllm.bib) — Khan, Kabir, "Quantization and Performance Evaluation of LLM for Low-Resource Languages," 67th MIPT, 2025.
+
+## External Profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=lbThuDYAAAAJ&hl=en) — Full publication list with citation counts.
+- [LinkedIn](https://www.linkedin.com/in/ihumaunkabir)
+- [GitHub](https://www.github.com/ihumaunkabir)
+- [X (Twitter)](https://x.com/ihumaunkabir)
+- [YouTube](https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g)
+
+## Contact
+
+- Email: humaun.kabir@phystech.edu
