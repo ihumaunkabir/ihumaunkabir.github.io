@@ -61,7 +61,6 @@ url: https://ihumaun.com/static/html/pastexp.md
 - [Contestant](https://icpc.baylor.edu/regionals/finder/bangladesh-cuet-ncpc-2017) — [National Collegiate Programming Contest 2017](https://icpc.baylor.edu/regionals/finder/bangladesh-cuet-ncpc-2017)
 - [Contestant](https://icpc.baylor.edu/regionals/finder/dhaka-2018/standings) — [ACM ICPC Dhaka Site Onsite Contest 2018](https://icpc.baylor.edu/regionals/finder/dhaka-2018/standings)
 - [Contestant](https://icpc.baylor.edu/regionals/finder/bangladesh-iubat-ncpc-2018) — [National Collegiate Programming Contest 2018](https://icpc.baylor.edu/regionals/finder/bangladesh-iubat-ncpc-2018)
-- [Contestant](https://icpc.baylor.edu/regionals/finder/dhaka-2018/standings) — [ACM ICPC Dhaka Site Onsite Contest 2018](https://icpc.baylor.edu/regionals/finder/dhaka-2018/standings)
 - And 10+ more national-level programming contests in Bangladesh.
 
 ### As Problem Author and Judge

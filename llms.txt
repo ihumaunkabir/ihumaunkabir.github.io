@@ -21,6 +21,7 @@ This site is published in both HTML and LLM-friendly markdown. Both versions con
 - [Google Scholar](https://scholar.google.com/citations?user=lbThuDYAAAAJ&hl=en) — Full publication list with citation counts.
 - [LinkedIn](https://www.linkedin.com/in/ihumaunkabir)
 - [GitHub](https://www.github.com/ihumaunkabir)
+- [HuggingFace](https://huggingface.co/ihumaunkabir)
 - [X (Twitter)](https://x.com/ihumaunkabir)
 - [YouTube](https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g)
 
