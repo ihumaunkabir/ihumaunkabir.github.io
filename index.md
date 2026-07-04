@@ -12,6 +12,8 @@ AI Engineer and Researcher
 - **LinkedIn**: https://www.linkedin.com/in/ihumaunkabir
 - **X (Twitter)**: https://x.com/ihumaunkabir
 - **GitHub**: https://www.github.com/ihumaunkabir
+- **Google Scholar**: https://scholar.google.com/citations?user=lbThuDYAAAAJ&hl=en
+- **HuggingFace**: https://huggingface.co/ihumaunkabir
 - **YouTube**: https://www.youtube.com/channel/UCP8q_bJNVIQVA5VkXbhNh0g
 
 ## About
@@ -26,7 +28,7 @@ I have been on the research path since mid-2022 and have since been working on n
 
 I have hands-on experience in Python, Golang, Next.js, TypeScript, C/C++, FastAPI, Flask, MongoDB, PostgreSQL, MySQL, pgvector, CI/CD, Docker, Airflow, n8n, ETL, Git, Sentry, Vercel, PyTorch, neural networks, scikit-learn, NLTK, Transformers, HuggingFace, open-source LLMs, Ollama, vLLM, Quantization, PEFT, SFT, Unsloth, RAG, Vector Database, Pinecone, Qdrant, Agentic Memory, Prompt Engineering, Agents, LLM evaluation, Langfuse, Arize Phoenix, AutoGen, LangChain, GCP, AWS, Azure and Azure AI.
 
-Currently, I am working on natural language processing, large language models and agents for various applications. Previously, I worked as a backend developer, co-led projects aimed at contributing to specific SDGs, and introduced school kids and university girls in Bangladesh to ICT since 2016. I have been awarded several international fellowships related to youth, technology and development, through which I gained invaluable experience.
+I am working on natural language processing, large language models and agents for various applications. Previously, I worked as a backend developer, co-led projects aimed at contributing to specific SDGs, and introduced school kids and university girls in Bangladesh to ICT since 2016. I have been awarded several international fellowships related to youth, technology and development, through which I gained invaluable experience.
 
 Please feel free to reach out via [email](mailto:humaun.kabir@phystech.edu) with any questions, or find me on X at [@ihumaunkabir](https://x.com/ihumaunkabir). Thank you!
 
@@ -72,43 +74,6 @@ Please feel free to reach out via [email](mailto:humaun.kabir@phystech.edu) with
 - Specialization: Neural Networks and Neural Computers
 - Phystech School of Radio Engineering and Computer Science
 - **Oct 2021 – Aug 2023**
-
-## Publications
-
-### Fake News Detection in Low-Resource Languages with LLMs
-**Kabir, A.S.M.H.**, Khan, S.A., Kharlamov, A.A., Voronkov, I.M.
-*Modeling, Optimization and Information Technology, Vol. 14(6)*
-[cite](cites/fnllr.bib)
-
-### Evaluation of Large Language Models for Bengali Fake News Classification Task in Zero-Shot Settings
-**Kabir, A.S.M.H.**, Kharlamov, A.A., Voronkov, I.M.
-*67th All-Russian Scientific Conference of MIPT*
-[cite](cites/bnllm.bib)
-
-### A Comparative Analysis of Word Embedding Models in Text Classification of Bengali Language
-**Kabir, A.S.M.H.**, Kharlamov, A.A., Voronkov, I.M.
-*66th All-Russian Scientific Conference of MIPT*
-[cite](cites/bne.bib)
-
-### Research Methods for Fake News Detection in Bangla Text
-**Kabir, A.S.M.H.**, Kharlamov, A.A., Voronkov, I.M.
-*International Conference on Neuroinformatics 2023*
-[cite](cites/bnf.bib)
-
-### No-Op-Aware Training and Quantization Framework for Outlier Robust Transformer based Language Models
-Khan, S.A., **Kabir, A.S.M.H.**
-*International Journal of Open Information Technologies, Vol. 14(6), pp. 65–70*
-[cite](cites/noop.bib)
-
-### Quantization of Outlier Free Quantizable Language Models
-Khan, S.A., **Kabir, A.S.M.H.**, Rustam, A.L.
-*Modeling, Optimization and Information Technology, Vol. 14(4)*
-[cite](cites/qofqlm.bib)
-
-### Quantization and Performance Evaluation of Large Language Model for Low-Resource Languages
-Khan, S.A., **Kabir, A.S.M.H.**
-*67th All-Russian Scientific Conference of MIPT*
-[cite](cites/qllm.bib)
 
 ## Talks and Fellowships
 

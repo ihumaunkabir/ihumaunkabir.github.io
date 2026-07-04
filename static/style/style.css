@@ -115,14 +115,14 @@ h1, h2, h3, h4 {
 }
 
 .hero__name {
-    font-size: var(--font-size-2xl);
+    font-size: calc(var(--font-size-2xl) * 0.9);
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--space-xs);
     color: var(--color-text-primary);
 }
 
 .hero__tagline {
-    font-size: var(--font-size-lg);
+    font-size: calc(var(--font-size-lg) * 0.9);
     color: var(--color-text-secondary);
     font-weight: var(--font-weight-light);
     margin-bottom: var(--space-lg);
@@ -434,5 +434,45 @@ h1, h2, h3, h4 {
     #theme-toggle {
         top: var(--space-md);
         right: var(--space-md);
+    }
+}
+
+/* ===== Wide layout: sticky profile sidebar (homepage only) ===== */
+@media (min-width: 960px) {
+    .container:has(.hero) {
+        --sidebar-gap: 5rem;
+        max-width: 1080px;
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        column-gap: calc(var(--space-3xl) * 1.5);
+    }
+
+    .container:has(.hero) .hero {
+        grid-column: 1;
+        grid-row: 1 / -1;
+        align-self: start;
+        position: sticky;
+        top: var(--sidebar-gap);
+        text-align: center;
+        padding: var(--sidebar-gap) 0 0;
+    }
+
+    .container:has(.hero) .hero__photo {
+        display: block;
+        margin: 0 auto var(--space-md);
+    }
+
+    .container:has(.hero) .hero__social {
+        justify-content: center;
+    }
+
+    .container:has(.hero) .section {
+        grid-column: 2;
+    }
+
+    /* Align the top of the scroll area with the top of the profile card */
+    .container:has(.hero) .section:first-of-type {
+        padding-top: var(--sidebar-gap);
+        border-top: none;
     }
 }
