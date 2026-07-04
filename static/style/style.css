@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 /* ===== Badge ===== */
 .badge {
     display: inline-block;
-    font-size: var(--font-size-xs);
+    font-size: calc(var(--font-size-xs) * 0.75);
     font-weight: var(--font-weight-semibold);
     padding: 0.15em 0.5em;
     border: 1px solid var(--color-border);

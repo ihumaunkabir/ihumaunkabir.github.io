@@ -68,7 +68,7 @@ Please feel free to reach out via [email](mailto:humaun.kabir@phystech.edu) with
 ## Education
 
 ### Moscow Institute of Physics and Technology
-*Red Diploma*
+*🎓 Red Diploma*
 
 - Master's in Applied Mathematics and Physics
 - Specialization: Neural Networks and Neural Computers
