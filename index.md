@@ -24,7 +24,7 @@ I worked under the supervision of [Prof. Alexander Kharlamov](https://orcid.org/
 
 I have been on the research path since mid-2022 and have since been working on natural language processing, machine learning, large language models and fine-tuning different pretrained models in multimodal NLP through my workplace, internships and personal projects. I am keenly interested in text generation, text classification, LLMs for multimodal NLP, NLP for social good and NLP applied to science.
 
-I have hands-on experience in Python, Golang, Next.js, TypeScript, MongoDB, PostgreSQL, CI/CD, Docker, Airflow, n8n, ETL, Sentry, PyTorch, neural networks, scikit-learn, Transformers, open-source LLMs, Quantization, PEFT, SFT, Unsloth, RAG, Pinecone, Qdrant, LLM evaluation, Langfuse, AutoGen, LangChain, GCP, AWS and Azure AI.
+I have hands-on experience in Python, Golang, Next.js, TypeScript, C/C++, FastAPI, Flask, MongoDB, PostgreSQL, MySQL, pgvector, CI/CD, Docker, Airflow, n8n, ETL, Git, Sentry, Vercel, PyTorch, neural networks, scikit-learn, NLTK, Transformers, HuggingFace, open-source LLMs, Ollama, vLLM, Quantization, PEFT, SFT, Unsloth, RAG, Vector Database, Pinecone, Qdrant, Agentic Memory, Prompt Engineering, Agents, LLM evaluation, Langfuse, Arize Phoenix, AutoGen, LangChain, GCP, AWS, Azure and Azure AI.
 
 Currently, I am working on natural language processing, large language models and agents for various applications. Previously, I worked as a backend developer, co-led projects aimed at contributing to specific SDGs, and introduced school kids and university girls in Bangladesh to ICT since 2016. I have been awarded several international fellowships related to youth, technology and development, through which I gained invaluable experience.
 
