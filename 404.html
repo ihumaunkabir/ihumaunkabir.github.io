@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Page Not Found - Humaun Kabir</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FOUC prevention -->
+    <script>
+        (function(){
+            var t = localStorage.getItem('theme-preference');
+            if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="static/style/style.css">
+
+    <style>
+        .not-found {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: var(--space-md);
+        }
+        .not-found__code {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="not-found">
+            <p class="not-found__code">404</p>
+            <p>This page doesn&rsquo;t exist.</p>
+            <p><a href="/">&larr; Back to home</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Humaun Kabir</p>
+    </footer>
+
+    <script src="static/style/style.js"></script>
+</body>
+
+</html>

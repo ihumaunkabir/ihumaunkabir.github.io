@@ -101,7 +101,10 @@
 
         <!-- Hero -->
         <header class="hero">
-            <img src="static/img/profile.jpg" alt="Humaun Kabir" class="hero__photo" width="160" height="160">
+            <picture>
+                <source srcset="static/img/profile.webp" type="image/webp">
+                <img src="static/img/profile.jpg" alt="Humaun Kabir" class="hero__photo" width="160" height="160" fetchpriority="high" decoding="async">
+            </picture>
             <h1 class="hero__name">Humaun Kabir</h1>
             <p class="hero__tagline">AI Engineer and Researcher</p>
             <nav class="hero__social" aria-label="Social links">
